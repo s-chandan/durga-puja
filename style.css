@@ -3,14 +3,14 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fff8f0;
+  background: #ffffff;
   color: #333;
 }
 
 header {
-  background-color: #b71c1c;
+  background-color: #e70a0a;
   color: white;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
   position: relative;
 }
@@ -18,8 +18,8 @@ header {
 .logo {
   width: 60px;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 5px;
+  left: 5px;
   border-radius: 50%;
   border: 2px solid white;
 }
@@ -28,11 +28,46 @@ header {
   width: 100%;
   max-height: 500px;
   object-fit: cover;
-  margin: 20px auto;
+  margin: 0px auto;
   display: block;
-  border-radius: 12px;
+  border-radius: 2px;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
 }
+
+.main-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-height: 500px;
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: 150%; /* 4 images */
+  animation: slideRTL 30s infinite linear;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Right to Left Animation */
+@keyframes slideRTL {
+  0%   { transform: translateX(0%); }
+  25%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-200%); }
+  75%  { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
+
 
 .committee, .gallery, .schedule, .donate {
   text-align: center;
@@ -96,20 +131,29 @@ footer {
   text-align: center;
   background: #880e4f;
   color: white;
-  padding: 15px;
+  padding: 25px;
 }
 
-.whatsapp {
+.whatsapp-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
+  bottom: 70px;  /* Footer ke upar rahe */
+  right: 0px;
+  z-index: 999;
+  display: black;
 }
+
+.whatsapp-icon img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  box-shadow: 0 2px 0px rgba(245, 1, 1, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon img:hover {
+  transform: scale(1.1);
+}
+
 
 @media screen and (max-width: 600px) {
   .logo {
