@@ -1,0 +1,125 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff8f0;
+  color: #333;
+}
+
+header {
+  background-color: #b71c1c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.main-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.committee, .gallery, .schedule, .donate {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff3e0;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.scroll-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #e53935;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #b71c1c;
+}
+
+.schedule table {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.schedule th, .schedule td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.qr {
+  width: 180px;
+  margin: 20px auto;
+}
+
+.upi-id {
+  font-size: 18px;
+  color: #b71c1c;
+}
+
+footer {
+  text-align: center;
+  background: #880e4f;
+  color: white;
+  padding: 15px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 40px;
+  }
+  .scroll-container img {
+    width: 80px;
+    height: 80px;
+  }
+  .qr {
+    width: 140px;
+  }
+}
