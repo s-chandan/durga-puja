@@ -112,6 +112,27 @@ header {
   background: #fff;
 }
 
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.schedule th, .schedule td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule th {
+  background-color: #d62828;
+  color: #fff;
+}
+
+
 .schedule th, .schedule td {
   border: 1px solid #ccc;
   padding: 10px;
@@ -153,6 +174,29 @@ footer {
 .whatsapp-icon img:hover {
   transform: scale(1.1);
 }
+
+
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links a {
+  color: #ffcccb;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 
 
 @media screen and (max-width: 600px) {
