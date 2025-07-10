@@ -284,18 +284,10 @@ export default function DurgaPujaWebsite() {
                       Bank Details
                     </h4>
                     <div className="space-y-2 text-gray-700">
-                      <p>
-                        <strong>Account Name:</strong> मां काली पूजा समिति
-                      </p>
-                      <p>
-                        <strong>Account No:</strong> 1234567890123456
-                      </p>
-                      <p>
-                        <strong>IFSC Code:</strong> SBIN0001234
-                      </p>
-                      <p>
-                        <strong>Bank:</strong> State Bank of India
-                      </p>
+                      <p><strong>Account Name:</strong> मां काली पूजा समिति</p>
+                      <p><strong>Account No:</strong> 1234567890123456</p>
+                      <p><strong>IFSC Code:</strong> SBIN0001234</p>
+                      <p><strong>Bank:</strong> State Bank of India</p>
                     </div>
                   </CardContent>
                 </Card>
