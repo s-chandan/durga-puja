@@ -79,7 +79,7 @@ export default function AdminLogin({ open, onOpenChange, onSuccess, adminEmail, 
             <Button type="submit">लॉगिन</Button>
           </div>
           <p className="text-xs text-gray-500">
-            नोट: यह साधारण क्लाइंट-साइड लॉगिन है. सुरक्षित सर्वर आधारित लॉगिन चाहिए तो मैं Supabase/NextAuth जोड़ सकता हूँ।
+            "Note:- Only for Admin Login"
           </p>
         </form>
       </DialogContent>

@@ -100,10 +100,10 @@ export default function DonationCollector({ open, onOpenChange, isAdmin, samitiN
 
   const composeWhatsAppMessage = (toName: string, paidAmt: number, dueAmt: number) => {
     const lines = [
-      `Namaste ${toName} ji,`,
-      `${samitiName} ki taraf se aapka dhanvaad.`,
-      `Aapne ₹${paidAmt.toLocaleString("en-IN")} jama kiya hai.`,
-      dueAmt > 0 ? `Baki rakam: ₹${dueAmt.toLocaleString("en-IN")}.` : `Koi baki rashi nahi hai.`,
+      `नमस्ते, ${toName} ji,`,
+      `${samitiName} की तरफ से आपका धन्यवाद.`,
+      `आपने ₹${paidAmt.toLocaleString("en-IN")} जमा किया है.`,
+      dueAmt > 0 ? `बाकी रकम: ₹${dueAmt.toLocaleString("en-IN")}.` : `कोई बाकी राशि नहीं है.`,
       `- ${samitiName}`,
     ]
     return lines.join("\n")

@@ -541,7 +541,7 @@ export default function DurgaPujaWebsite() {
                     className="w-full bg-transparent"
                     onClick={() => window.open("tel:+918825288228")}
                   >
-                    📞 +91 88252 88228
+                    📞 +91 73708 91302
                   </Button>
                   <Button
                     variant="outline"
